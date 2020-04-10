@@ -4,6 +4,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411 #开启链路跟踪
+    enabled: true
   application:
     name: springcloud-config
 

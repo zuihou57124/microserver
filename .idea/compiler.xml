@@ -9,11 +9,15 @@
         <module name="zuul" />
         <module name="eureka-server" />
         <module name="config-server" />
+        <module name="zipkin" />
         <module name="provider-tickt" />
         <module name="cousumer-user" />
         <module name="microserver" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zipkin" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,6 +25,7 @@
       <module name="cousumer-user" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="provider-tickt" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

@@ -1,13 +1,19 @@
 spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    enabled: true
   application:
     name: eureka-gateway
+
 server:
   port: 8770
+
 zuul:
   routes:
     consumer-user:
       path: /api-a/**
-      serviceId: PROVIDER-TICKT
+      serviceId: CONSUMER-USER
+
 eureka:
   client:
     service-url:
