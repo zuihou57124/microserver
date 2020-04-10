@@ -1,6 +1,5 @@
 package com.springclouddemo.cousumeruser.controller;
 
-
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.springclouddemo.cousumeruser.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +21,8 @@ public class HelloController {
     @ResponseBody
     @HystrixCommand(fallbackMethod = "hystrix")
     public String hello(String name){
-        //return helloService.hello(name);
-        return username;
+        return helloService.hello(name);
+        //return username;
     }
 
     public String hystrix(String name){
