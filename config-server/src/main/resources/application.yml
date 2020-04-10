@@ -9,7 +9,6 @@ spring:
     enabled: true
   application:
     name: springcloud-config
-
   cloud:
     config:
       label: master
@@ -19,5 +18,9 @@ spring:
           username: 1545409483@qq.com
           password: 4188qinwei
           search-paths: config
+  boot:
+    admin:
+      client:   #服务监控客户端
+        url: http://127.0.0.1:8771
 server:
   port: 8888

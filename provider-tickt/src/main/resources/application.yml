@@ -2,6 +2,10 @@ server:
   port: 8762 #端口
 
 spring:
+  boot:
+    admin:
+      client:   #服务监控客户端
+        url: http://127.0.0.1:8771
   zipkin:
     base-url: http://127.0.0.1:9411
     enabled: true
