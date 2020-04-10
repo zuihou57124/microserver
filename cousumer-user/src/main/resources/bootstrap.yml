@@ -5,6 +5,6 @@ spring:
         enabled: true
         service-id: SPRINGCLOUD-CONFIG  #配置应用名称
       name: config  #要从远程获取的配置文件名称
-      profile: dev  #环境(dev,test,pro)
+      profile: dev  #环境(dev,test,prod)
       label: master
 
