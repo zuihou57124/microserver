@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: SPRINGCLOUD-CONFIG
+      name: config
+      profile: dev
+      label: master
+
